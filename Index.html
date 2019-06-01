@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Conway's Game of Life</title>
+      <link rel="stylesheet" type="text/css" href="Styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Buttons for the size of the grid rendered -->
+      <div>
+        <form id="GridRender">
+            <input type="radio" name="gridSize" value="small" onchange="Grid.RenderGrid()"> Small
+            <input type="radio" name="gridSize" value="medium" onchange="Grid.RenderGrid()"> Medium
+            <input type="radio" name="gridSize" value="large" onchange="Grid.RenderGrid()"> Large
+            <input type="radio" name="gridSize" value="xlarge" onchange="Grid.RenderGrid()"> Extra Large
+        </form>
+        <!-- Randomly generate populations in the grid the user rendered -->
+        <button onclick="Grid.RandomObstacleGeneration()" id="ObstacleGenerate">Random Generation</button>
+        <!-- Clear the grid if you've ran the algo once; want to start again, or done something you want to clear -->
+        <button onclick="Grid.ClearGrid()" id="ClearGrid">Clear grid</button>
+        <!-- Start Conways -->
+        <button onclick="Conway.Begin()" id="BeginGame">Begin Conway's Game of Life</button>
+        <!-- End Conways -->
+        <button onclick="Conway.End()" id="EndGame">End Conway's Game of Life</button>
+        <!-- Generation count for the user.--> 
+        <br><br>
+        <div id="main" class="container">
+            <p id="information"></p>
+        </div>
+    </div>
+   </body>
+   <script src="ConwaysRules.js"></script>
+</html>

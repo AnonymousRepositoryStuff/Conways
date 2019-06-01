@@ -1,0 +1,82 @@
+* { font-size: 15px; font-family: 'Roboto Slab', serif;  }
+html, body { height: 100%; width: 100%; margin: 0; }
+div { height: 100%; width: 100%; }
+button, form  { background-color: #6699ff; border: none; color: white; padding: 10px 11px; display: inline-block; margin-top: 0px; }
+input[type="radio"]{-ms-transform: scale(0.7); /* IE 9 */ -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */ transform: scale(1.5);}
+a { font-size: 30px;}
+button { margin-top: 5px;}
+br {line-height: 0px;}
+
+/* Necessary to stop the grid having small seperations in them, when the information pops up. */
+#information {
+	padding: 10px;
+}
+
+#main {
+    -webkit-user-select: none;  /* This (and all below stylings) are just to ensure we don't try to "highlight" the boxes. It leaves this blue highlight display isue that looks bad without the css override. */																																                 
+    -khtml-user-select: none;     
+    -moz-user-select: none;       
+    -ms-user-select: none;        
+	user-select: none;
+}
+
+.container {
+	text-align: center;
+	font-size: 0;
+	display: block; 
+	text-align: center;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.noClick {
+	pointer-events: none;
+}
+
+.boxSmall {
+	display: inline-block;
+	border: 2px solid black;
+	width: 	3%;
+	height: 3%;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	vertical-align: top;
+}
+
+.boxMedium {
+	display: inline-block;
+	border: 2px solid black;
+	width: 	2%;
+	height: 2%;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	vertical-align: top;
+}
+
+.boxLarge {
+	display: inline-block;
+	border: 2px solid black;
+	width: 	1.9%;
+	height: 1.9%;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	vertical-align: top;
+}
+
+.boxXLarge {
+	display: inline-block;
+	border: 2px solid black;
+	width: 	0.4%;
+	height: 0.4%;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	vertical-align: top;
+}
+
+.population {
+	background-color: purple;
+}
